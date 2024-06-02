@@ -4,7 +4,7 @@
 &nbsp; &nbsp; ![Static Badge](https://img.shields.io/badge/3.3.0-%20?style=flat&logo=dart&logoColor=%230175C2&label=%20dart&labelColor=lightblue&color=darkgreen)
 &nbsp; &nbsp; ![Static Badge](https://img.shields.io/badge/2.31.1-%20?style=flat&logo=dev.to&logoColor=%230A0A0A&label=DevTools&labelColor=lightyellow&color=yellow)
 
->## Kullanılan Teknolojiler
+>## Technologies Used
 >![Static Badge](https://img.shields.io/badge/Flutter-%20?style=for-the-badge&logo=flutter&logoColor=%2302569B&labelColor=lightblue&color=darkblue)
 <!---
 >## Install
