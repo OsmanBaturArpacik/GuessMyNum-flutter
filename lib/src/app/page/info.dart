@@ -2,10 +2,6 @@ import 'package:flutter/material.dart';
 
 
 class InfoPage extends StatelessWidget {
-  final VoidCallback navigateBack;
-
-  InfoPage({required this.navigateBack});
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -16,9 +12,11 @@ class InfoPage extends StatelessWidget {
             Text("This is the Info Page"),
             SizedBox(height: 20,),
             ElevatedButton(
-              onPressed: navigateBack,
-              child: Text("Back to Home"),
-            ), 
+              onPressed: () {
+                Navigator.pop(context);
+              },
+              child: Text("Back To Home")
+            ),
           ],
         ),
       ),

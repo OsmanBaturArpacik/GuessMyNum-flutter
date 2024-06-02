@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:guessgame/src/app/func/slide_page_route.dart';
 import 'play.dart';
 import 'info.dart';
 
@@ -35,19 +36,28 @@ class _MyHomePageState extends State<MyHomePage> {
                 Image.asset("assets/images/logo_guess.png"),
                 SizedBox(height: 80,),
                 ElevatedButton(
-                  onPressed: () => _navigateToPage(1),
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      SlidePageRoute(page: PlayPage()),
+                    );
+                  },
                   child: Text("Play"),
                 ),
                 SizedBox(height: 20,),
                 ElevatedButton(
-                  onPressed: () => _navigateToPage(2),
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      SlidePageRoute(page: InfoPage()),
+                    );
+                  },
                   child: Text("Info"),
                 ),
               ],
             ),
           ),
-          PlayPage(navigateBack: () => _navigateToPage(0)),
-          InfoPage(navigateBack: () => _navigateToPage(0)),
+          Container(),
         ],
       ),
     );
