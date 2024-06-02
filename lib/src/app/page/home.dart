@@ -22,6 +22,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        centerTitle: true,
         title: Text("Guess My Num"),
       ),
       body: PageView(
@@ -45,8 +46,8 @@ class _MyHomePageState extends State<MyHomePage> {
               ],
             ),
           ),
-          PlayPage(),
-          InfoPage(),
+          PlayPage(navigateBack: () => _navigateToPage(0)),
+          InfoPage(navigateBack: () => _navigateToPage(0)),
         ],
       ),
     );
