@@ -1,0 +1,1 @@
+//TODO: create gamestatus, check all posibility, like gamengine
