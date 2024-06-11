@@ -14,9 +14,12 @@ class PlayPage extends StatelessWidget {
             SizedBox(height: 20,),
             ElevatedButton(
               onPressed: () {
-                Navigator.pop(context);
+                Navigator.push(
+                  context,
+                  SlidePageRoute(page: GamePage()),
+                );
               },
-              child: Text("Back To Home")
+              child: Text("Singleplayer"),
             ),
             SizedBox(height: 20,),
             ElevatedButton(
@@ -26,7 +29,14 @@ class PlayPage extends StatelessWidget {
                   SlidePageRoute(page: GamePage()),
                 );
               },
-              child: Text("Play"),
+              child: Text("Multiplayer"),
+            ),
+            SizedBox(height: 20,),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pop(context);
+              },
+              child: Text("Back To Home")
             ),
           ],
         ),
